@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="logo">
+                <img class="img" src="css/images/coepTechBlack1.png">
+            </div>
+            <div class="form">
+                <h1>Log in</h1>
+                <form action="/login" method="POST">
+                    <div class="form-group">
+                        <label for="Name">Name:</label>
+                        <input type="text" id="Name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="checkbox" id="terms" name="terms" required>
+                        <label for="terms">I agree to the <a href="#">terms and conditions</a></label>
+                    </div>
+                    <button class="submit1" type="submit">Sign in</button>
+                </form>
+                <h3>Don't have an account?</h3>
+        <a href="/signup">Create a new account</a>
+            </div>
+                    
+        </div>
+    </div>
+</body>
+</html>
